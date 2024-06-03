@@ -7,45 +7,67 @@
 </head>
 <body>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About</a>
+    <ul>
+
+        <li>
+            <a href="#about">About</a>
+        </li>
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
+        <li>
+            <a href="#skills">My Skills</a>
+        </li>
+        <li>
+            <a href="#projects">My Projects</a>
+        </li>
+    </ul>
     </nav>
 <!--Section : intr0-->
 <header>
     <h1>Sadman Sohan</h1>
-    <p>An IT student of University Of Rajshahi</p><hr>
+    <img src="/img/391592212_1512955276186126_4341228969748134611_n.jpg" height="150">
+    <p><em>IT student of University Of Rajshahi</em> </p><hr>
 </header>
 <!--about me-->
-<section>
+<section id="about">
     <h2>About Me</h2>
     <p><strong>Experience : </strong>As a complete beginner i don't have any experience yet </p>
     <p><strong>Education : </strong>I have completed my SSC in 2020 and HSC in 2022. Now am an undergraduate student at University Of Rajshahi.My dept is ICE</p>
 </section><hr>
 <!--skills-->
-<section>
+<section id="skills">
     <h2>Skills </h2>
-    <ul>
-        <li>HTML</li>
-        <li>C</li>
-        <li>
-            C++
-            <ul type="square">
-                <li>Vector</li>
-                <li>String</li>
-                <li>Map</li>
-                <li>Set</li>
-            </ul>
-        </li>
-        <li>Python</li>
-    </ul>
-    <dl>
-        <dt>HTML : </dt><dd>HTML is a markup language devised to website design</dd>
-        <dt>C : </dt><dd>C is a programming language</dd>
-    </dl>
+ <table border="1" cellpadding="15" cellspacing="0">
+    <thead>
+     <tr>
+        <th>Technology</th>
+        <th>Proficiency</th>
+     </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>HTML</td>
+            <td>Intermediate</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>Intermediate</td>
+        </tr>
+        <tr>
+            <td>C++</td>
+            <td>Intermediate</td>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td>Beginner</td>
+        </tr>
+
+    </tbody>
+ </table>
 </section><hr>
 <!--projects-->
-<section>
+<section id="projects">
     <h2>Projects  </h2>
     <ul>
         <li><a href="https://github.com/Sadman2310/Portfolio-HTML.git" target="_blank">Portfolio Webpage</a></li>
@@ -54,10 +76,30 @@
     </ul>
 </section><hr>
 <!--contact-->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+        <div>
+           <label for="name">Name :</label>
+           <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="email">Email :</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="messege">Messege :</label><br>
+           <textarea name="messege" id="messege" rows="10" cols="30"></textarea>
+        </div>
+        <div>
+           <button type="submit">Submit</button>
+           <button type="reset">Clear</button>
+        </div>
+    </form>
+</section><hr>
 <footer>
-    <p>Copyright reserved by <strong>Sadman Sohan</strong></p>
-    <a href="tel:01736932064">Call me</a>
-    <a href="mailto:sadmansohan10@gmail.com">Email me</a>
+    <p>Copyright reserved by &copy;<strong>Sadman Sohan</strong></p>
+    <p>Developed with &hearts;</p>
 </footer>
 </body>
 
